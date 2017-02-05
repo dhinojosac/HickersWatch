@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dhinojosac.android.hickerswatch.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/background_gray_transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Hicker's Watch"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/labelLatitude"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Latitude:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/valueLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/labelLongitude"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Longitude:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/valueLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/labelAccuracy"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Accuracy:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/valueAccuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/labelAltitude"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Altitude:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/valueAltitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/labelAddress"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+
+            <TextView
+                android:id="@+id/valueAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+            <TextView
+                android:id="@+id/valueAddressCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize"/>
+            <TextView
+                android:id="@+id/valueAddressCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
